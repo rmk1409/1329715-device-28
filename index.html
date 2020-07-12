@@ -7,15 +7,15 @@
 <body>
 <header>
   <section>
-    <h2>Вверхняя строка с поиском и пользовательскими кнопками</h2>
+    <h2 class="visually-hidden">Вверхняя строка с поиском и пользовательскими кнопками</h2>
     <a>
-      <img src="img/logo.png" alt="Лого верхний" width="163" height="35">
+      <img src="img/logo.png" alt="лого верхний" width="163" height="35">
     </a>
     <form method="get" action="#" class="form-search">
-      <label>
+      <label for="search-input" class="visually-hidden">
         Поиск
-        <input type="search" placeholder="Поиск по сайту">
       </label>
+      <input id="search-input" type="search" placeholder="Поиск по сайту">
     </form>
     <ul>
       <li>
@@ -68,7 +68,7 @@
 </header>
 <main>
   <section>
-    <h2>Слайдер</h2>
+    <h2 class="visually-hidden">Слайдер</h2>
     <ul>
       <li>
         <article>
@@ -130,42 +130,30 @@
     </ul>
   </section>
   <section>
-    <h2>Product types</h2>
+    <h2 class="visually-hidden">Типы продуктов</h2>
     <ul>
       <li>
-        <div>
-          <p>Виртуальная реальность</p>
-        </div>
+        <a href="#">Виртуальная реальность</a>
       </li>
       <li>
-        <div>
-          <p>Моноподы для селфи</p>
-        </div>
+        <a href="#">Моноподы для селфи</a>
       </li>
       <li>
-        <div>
-          <p>Экшн-камеры</p>
-        </div>
+        <a href="#">Экшн-камеры</a>
       </li>
       <li>
-        <div>
-          <p>Фитнес-браслеты</p>
-        </div>
+        <a href="#">Фитнес-браслеты</a>
       </li>
       <li>
-        <div>
-          <p>Умные часы</p>
-        </div>
+        <a href="#">Умные часы</a>
       </li>
       <li>
-        <div>
-          <p>Квадрокоптеры</p>
-        </div>
+        <a href="#">Квадрокоптеры</a>
       </li>
     </ul>
   </section>
   <section>
-    <h2>Services</h2>
+    <h2 class="visually-hidden">Сервисы</h2>
     <ul>
       <li>
         <a href="#">Доставка</a>
@@ -196,7 +184,7 @@
     </ul>
   </section>
   <section>
-    <h2>Partners</h2>
+    <h2 class="visually-hidden">Партнеры</h2>
     <ul>
       <li>
         <img src="img/partner-logo-1.png" alt="партнер" width="260" height="100">
@@ -234,14 +222,14 @@
 </main>
 <footer>
   <section>
-    <h2>Адрес</h2>
+    <h2 class="visually-hidden">Блок с адресом</h2>
     <a>
       <img src="img/logo_yellow.png" alt="Лого нижний" width="163" height="35">
     </a>
     <p>г. Москва, ул. Строителей, 15</p>
   </section>
   <section>
-    <h2>Меню и соц. сети</h2>
+    <h2 class="visually-hidden">Блок меню и соц. сетей</h2>
     <ul>
       <li>
         <a href="#">Доставка</a>
@@ -275,7 +263,7 @@
     </ul>
   </section>
   <section>
-    <h2>Пользовательские кнопки, телефон и ссылка на академию</h2>
+    <h2 class="visually-hidden">Блок с пользовательскими кнопками, телефоном и ссылкой на академию</h2>
     <ul>
       <li>
         <a href="#">Войти</a>
@@ -296,17 +284,31 @@
   </section>
 </footer>
 <section>
-  <h2>Обратная связь</h2>
-  <!--  TODO Здесь будет форма -->
-  <button>Закрыть</button>
+  <h2 class="visually-hidden">Обратная связь</h2>
+  <form method="post" action="#">
+    <label>
+      Ваше имя:
+      <input type="text" name="name" placeholder="Имя Фамилия">
+    </label>
+    <label>
+      Ваш e-mail:
+      <input type="email" name="email" placeholder="email@example.com">
+    </label>
+    <label>
+      Текст письма:
+      <textarea name="message" placeholder="В свободной форме"></textarea>
+    </label>
+    <button type="submit">Отправить</button>
+  </form>
+  <button title="кнопка закрыть">Закрыть</button>
 </section>
 <section>
-  <h2>Карта</h2>
+  <h2 class="visually-hidden">Карта</h2>
   <!--  TODO Здесь будет интерктивная карта -->
   <p>
     <img src="img/map-popup.png" alt="Карта" width="994" height="593">
   </p>
-  <button>Закрыть</button>
+  <button title="кнопка закрыть">Закрыть</button>
 </section>
 </body>
 </html>
