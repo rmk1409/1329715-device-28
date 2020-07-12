@@ -1,0 +1,276 @@
+:root {
+  --black-basic: #000;
+  --black-almost: #363636;
+
+  --white: #fff;
+
+  --grey-basic: #7e7e7e;
+  --grey-dark: #464646;
+  --grey-light: #e5e5e5;
+  --grey-back: #ebebeb;
+
+  --yellow: #f7e296;
+  --orange: #f0c52e;
+  --green: #91c92f;
+  --pink: #f6dada;
+
+  --font-open-sans: "Open-Sans", Arial, sans-serif;
+  --font-gilroy: "Gilroy", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1160px;
+  font-family: var(--font-open-sans);
+  font-size: 15px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-basic);
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-body ul {
+  list-style: none;
+}
+
+.main-body ul,
+.main-body p,
+.main-body h1,
+.main-body h2,
+.main-body h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.main-header {
+  background-image: linear-gradient(var(--white) 20px, var(--yellow) 20px);
+}
+
+.header-upper-row {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.header-main-nav {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: var(--font-gilroy);
+  text-transform: uppercase;
+}
+
+.submenu {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: var(--font-open-sans);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.slider {
+  font-family: var(--font-gilroy);
+  background-image: linear-gradient(var(--yellow) 146px, var(--white) 146px);
+}
+
+.service-section {
+  background-image: linear-gradient(var(--white) 115px, var(--grey-light) 115px);
+}
+
+.slider .description,
+.footer-address-section,
+.footer-user-section {
+  font-family: var(--font-open-sans);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.slider h3 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.slider .property-value {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.slider .property-description {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.button {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-type-section,
+.service-section a,
+.button,
+.footer-nav,
+.popup-feedback label,
+.catalog-section a {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.service-section h3,
+.about-us-section h2,
+.contact-section h2,
+.main h1 {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.service-section p,
+.about-us-section p,
+.contact-section p {
+  font-family: var(--font-open-sans);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.service-list {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.popup-feedback input,
+.popup-feedback textarea,
+.breadcrumbs,
+.form-filter label,
+.sort-section-link-list {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.link-exit,
+.breadcrumbs {
+  opacity: 0.3;
+}
+
+.main h2,
+.sort-section h3,
+.pages-section {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.form-filter legend {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.form-filter label {
+  font-weight: 300;
+}
+
+.sort-section-link-list a {
+  opacity: 0.3;
+}
+
+.sort-section-link-list .sort-link_active {
+  opacity: 1;
+}
+
+.price {
+  font-family: var(--font-gilroy);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.button-add-to-compare {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.pages-section {
+  background-color: var(--grey-back);
+}
+
+.footer-user-section span,
+.footer-user-section a {
+  opacity: 0.7;
+}
+
+.main-footer {
+  color: var(--white);
+  background-color: var(--black-almost);
+}
+
+.footer-nav a {
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.footer-nav a,
+.contact-section h2,
+.about-us-section h2,
+.button,
+.service-section h3,
+.header-main-nav {
+  letter-spacing: 0.2em;
+}
+
+.catalog-link {
+  letter-spacing: 0.1em;
+}
+
+.footer-user-section a {
+  color: inherit;
+}
+
+.logo {
+  transition-duration: .3s;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}

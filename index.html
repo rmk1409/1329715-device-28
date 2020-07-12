@@ -3,12 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>Девайс - Главная</title>
+  <link rel="stylesheet"
+        href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header>
-  <section>
+<body class="main-body">
+<header class="main-header">
+  <section class="header-upper-row">
     <h2 class="visually-hidden">Вверхняя строка с поиском и пользовательскими кнопками</h2>
-    <a>
+    <a class="logo">
       <img src="img/logo.png" alt="лого верхний" width="163" height="35">
     </a>
     <form method="get" action="#" class="form-search">
@@ -29,11 +35,11 @@
       </li>
     </ul>
   </section>
-  <nav>
+  <nav class="header-main-nav">
     <ul>
       <li>
-        <a href="catalog.html">Каталог товаров</a>
-        <ul>
+        <a href="catalog.html" class="catalog-link">Каталог товаров</a>
+        <ul class="submenu">
           <li>
             <a href="#">Вируальная реальность</a>
           </li>
@@ -67,7 +73,7 @@
   </nav>
 </header>
 <main>
-  <section>
+  <section class="slider">
     <h2 class="visually-hidden">Слайдер</h2>
     <ul>
       <li>
@@ -75,28 +81,32 @@
           <img src="img/slider-1.png" alt="продукт" width="384" height="486">
           <div>
             <h3>Делай селфи, как Бен Стиллер!</h3>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восеьм (Восемь, Карл!) метров длиной и весом
-              всего 5 килограмм</p>
-            <a href="#">Подробнее</a>
+            <p class="description">
+              Самая длинная палка для селфи доступна в нашем магазине. Восеьм (Восемь, Карл!) метров длиной и весом
+              всего 5 килограмм
+            </p>
+            <a href="#" class="button">Подробнее</a>
             <section>
-              <p>8,5 м</p>
-              <p>5 кг</p>
-              <p>Карбон</p>
-              <p>Длина палки</p>
-              <p>Вес палки</p>
-              <p>Материал</p>
+              <p class="property-value">8,5 м</p>
+              <p class="property-value">5 кг</p>
+              <p class="property-value">Карбон</p>
+              <p class="property-description">Длина палки</p>
+              <p class="property-description">Вес палки</p>
+              <p class="property-description">Материал</p>
             </section>
           </div>
         </article>
         <article>
-          <img src="img/slider-2.png" alt="продукт" width="345" height="485">
+          <img src="img/slider-2.png" alt="продукт" width="345" height="483">
           <div>
             <h3>Худеем правильно!</h3>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a href="#">Подробнее</a>
+            <p class="description">
+              Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+            </p>
+            <a href="#" class="button">Подробнее</a>
             <section>
-              <p>48 часов</p>
-              <p>Без подзарядки</p>
+              <p class="property-value">48 часов</p>
+              <p class="property-description">Без подзарядки</p>
             </section>
           </div>
         </article>
@@ -104,14 +114,17 @@
           <img src="img/slider-3.png" alt="продукт" width="526" height="334">
           <div>
             <h3>Порхает как бабочка, жалит как пчела!</h3>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
-              камеру.</p>
-            <a href="#">Подробнее</a>
+            <p class="description">
+              Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
+              под стандартную
+              камеру.
+            </p>
+            <a href="#" class="button">Подробнее</a>
             <section>
-              <p>800 м</p>
-              <p>50 м</p>
-              <p>Дальность полета</p>
-              <p>Радиус поражения</p>
+              <p class="property-value">800 м</p>
+              <p class="property-value">50 м</p>
+              <p class="property-description">Дальность полета</p>
+              <p class="property-description">Радиус поражения</p>
             </section>
           </div>
         </article>
@@ -129,7 +142,7 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="product-type-section">
     <h2 class="visually-hidden">Типы продуктов</h2>
     <ul>
       <li>
@@ -152,17 +165,17 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="service-section">
     <h2 class="visually-hidden">Сервисы</h2>
     <ul>
       <li>
-        <a href="#">Доставка</a>
+        <a href="#" class="button">Доставка</a>
       </li>
       <li>
-        <a href="#">Гарантия</a>
+        <a href="#" class="button">Гарантия</a>
       </li>
       <li>
-        <a href="#">Кредит</a>
+        <a href="#" class="button">Кредит</a>
       </li>
     </ul>
     <ul>
@@ -200,28 +213,28 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="about-us-section">
     <h2>О нас</h2>
     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
     <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
       компаниями:</p>
-    <ul>
+    <ul class="service-list">
       <li>Деловые линии</li>
       <li>Автотрейдинг</li>
       <li>ЖелДорЭкспедиция</li>
     </ul>
-    <a href="#">Подробнее о нас</a>
+    <a href="#" class="button">Подробнее о нас</a>
   </section>
-  <section>
+  <section class="contact-section">
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
       бывает.</p>
     <img src="img/map_small.png" alt="карта" width="560" height="222">
-    <a href="#">Напишите нам</a>
+    <a href="#" class="button">Напишите нам</a>
   </section>
 </main>
-<footer>
-  <section>
+<footer class="main-footer">
+  <section class="footer-address-section">
     <h2 class="visually-hidden">Блок с адресом</h2>
     <a>
       <img src="img/logo_yellow.png" alt="Лого нижний" width="163" height="35">
@@ -230,7 +243,7 @@
   </section>
   <section>
     <h2 class="visually-hidden">Блок меню и соц. сетей</h2>
-    <ul>
+    <ul class="footer-nav">
       <li>
         <a href="#">Доставка</a>
       </li>
@@ -244,25 +257,22 @@
     <ul>
       <li>
         <a href="#" aria-label="фейсбук">
-          fb
           <img src="img/social-icon_facebook.svg" alt="соц. сеть" width="32" height="32">
         </a>
       </li>
       <li>
         <a href="#" aria-label="инстаграм">
-          insta
           <img src="img/social-icon_instagram.svg" alt="соц. сеть" width="32" height="32">
         </a>
       </li>
       <li>
         <a href="#" aria-label="твиттер">
-          twitter
           <img src="img/social-icon_twitter.svg" alt="соц. сеть" width="32" height="32">
         </a>
       </li>
     </ul>
   </section>
-  <section>
+  <section class="footer-user-section">
     <h2 class="visually-hidden">Блок с пользовательскими кнопками, телефоном и ссылкой на академию</h2>
     <ul>
       <li>
@@ -276,14 +286,14 @@
       </li>
     </ul>
     <p>
-      Тел.: <a href="tel:+74954959595" aria-label="контактный номер">+7 (495) 495-95-95</a>
+      <span>Тел.:</span> <a href="tel:+74954959595" aria-label="контактный номер">+7 (495) 495-95-95</a>
     </p>
     <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="ссылка на академию">
       <img src="img/logo-html.png" alt="лого академии" width="27" height="34">
     </a>
   </section>
 </footer>
-<section>
+<section class="popup-feedback">
   <h2 class="visually-hidden">Обратная связь</h2>
   <form method="post" action="#">
     <label>
@@ -298,7 +308,7 @@
       Текст письма:
       <textarea name="message" placeholder="В свободной форме"></textarea>
     </label>
-    <button type="submit">Отправить</button>
+    <button type="submit" class="button">Отправить</button>
   </form>
   <button title="кнопка закрыть">Закрыть</button>
 </section>

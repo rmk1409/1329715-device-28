@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Девайс - Каталог</title>
+  <link rel="stylesheet"
+        href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header>
-  <section>
+<body class="main-body">
+<header class="main-header">
+  <section class="header-upper-row">
     <h2 class="visually-hidden">Вверхняя строка с поиском и кнопками</h2>
-    <a href="index.html">
+    <a href="index.html" class="logo">
       <img src="img/logo.png" alt="лого верхний" width="163" height="35">
     </a>
     <form method="get" action="#" class="form-search">
@@ -22,7 +28,7 @@
         <a href="#" aria-label="ссылка на профиль">Валентин Петухов</a>
       </li>
       <li>
-        <a href="#">Выйти</a>
+        <a href="#" class="link-exit">Выйти</a>
       </li>
       <li>
         <a href="#">Сравнить</a>
@@ -32,11 +38,11 @@
       </li>
     </ul>
   </section>
-  <nav>
+  <nav class="header-main-nav">
     <ul>
       <li>
-        <a href="catalog.html">Каталог товаров</a>
-        <ul>
+        <a href="catalog.html" class="catalog-link">Каталог товаров</a>
+        <ul class="submenu">
           <li>
             <a href="#">Вируальная реальность</a>
           </li>
@@ -69,11 +75,11 @@
     </ul>
   </nav>
 </header>
-<main>
+<main class="main">
   <h1>Моноподы для селфи</h1>
   <ul class="breadcrumbs">
     <li>
-      <a href="#">Главная</a>
+      <a href="index.html">Главная</a>
     </li>
     <li>
       <a href="#">Каталог товаров</a>
@@ -83,9 +89,9 @@
     </li>
   </ul>
   <h2>Фильтр</h2>
-  <section>
+  <section class="sort-section">
     <h3>Сортировка</h3>
-    <ul>
+    <ul class="sort-section-link-list">
       <li>
         <a href="#" class="sort-link_active">По цене</a>
       </li>
@@ -109,7 +115,7 @@
       </li>
     </ul>
   </section>
-  <form method="get" action="https://echo.htmlacademy.ru/">
+  <form method="get" action="https://echo.htmlacademy.ru/" class="form-filter">
     <fieldset>
       <legend>Стоимость</legend>
       <!-- TODO здесь будет range with prices-->
@@ -148,48 +154,48 @@
         Нет
       </label>
     </fieldset>
-    <button type="submit">Показать</button>
+    <button type="submit" class="button">Показать</button>
   </form>
-  <section>
+  <section class="catalog-section">
     <h3 class="visually-hidden">Секция с продуктами</h3>
     <article>
       <img src="img/product-1.jpg" alt="продукт" width="360" height="380">
       <a href="#">Любительсая селфи-палка</a>
-      <p>500 руб.</p>
+      <p class="price">500 руб.</p>
       <div>
-        <button type="button">В корзину</button>
-        <button type="button">Добавить к сравнению</button>
+        <button type="button" class="button">В корзину</button>
+        <button type="button" class="button-add-to-compare">Добавить к сравнению</button>
       </div>
     </article>
     <article>
       <img src="img/product-2.jpg" alt="продукт" width="360" height="380">
       <a href="#">Профессиональная селфи-палка</a>
-      <p>1 500 руб.</p>
+      <p class="price">1 500 руб.</p>
       <div>
-        <button type="button">В корзину</button>
-        <button type="button">Добавить к сравнению</button>
+        <button type="button" class="button">В корзину</button>
+        <button type="button" class="button-add-to-compare">Добавить к сравнению</button>
       </div>
     </article>
     <article>
       <img src="img/product-3.jpg" alt="продукт" width="360" height="380">
       <a href="#">Непотопляемая селфи-палка</a>
-      <p>2 500 руб.</p>
+      <p class="price">2 500 руб.</p>
       <div>
-        <button type="button">В корзину</button>
-        <button type="button">Добавить к сравнению</button>
+        <button type="button" class="button">В корзину</button>
+        <button type="button" class="button-add-to-compare">Добавить к сравнению</button>
       </div>
     </article>
     <article>
       <img src="img/product-4.jpg" alt="продукт" width="360" height="380">
       <a href="#">Селфи-палка "Следуй за мной"</a>
-      <p>4 900 руб.</p>
+      <p class="price">4 900 руб.</p>
       <div>
-        <button type="button">В корзину</button>
-        <button type="button">Добавить к сравнению</button>
+        <button type="button" class="button">В корзину</button>
+        <button type="button" class="button-add-to-compare">Добавить к сравнению</button>
       </div>
     </article>
   </section>
-  <section>
+  <section class="pages-section">
     <h3 class="visually-hidden">Страницы</h3>
     <ul>
       <li>
@@ -210,8 +216,8 @@
     </ul>
   </section>
 </main>
-<footer>
-  <section>
+<footer class="main-footer">
+  <section class="footer-address-section">
     <h2 class="visually-hidden">Блок с адресом</h2>
     <a href="index.html">
       <img src="img/logo_yellow.png" alt="лого нижний" width="163" height="35">
@@ -219,8 +225,8 @@
     <p>г. Москва, ул. Строителей, 15</p>
   </section>
   <section>
-    <h2>Блок с меню и соц. сетями</h2>
-    <ul>
+    <h2 class="visually-hidden">Блок с меню и соц. сетями</h2>
+    <ul class="footer-nav">
       <li>
         <a href="#">Доставка</a>
       </li>
@@ -234,25 +240,22 @@
     <ul>
       <li>
         <a href="#" aria-label="фейсбук">
-          fb
           <img src="img/social-icon_facebook.svg" alt="соц. сеть" width="32" height="32">
         </a>
       </li>
       <li>
         <a href="#" aria-label="инстаграм">
-          insta
           <img src="img/social-icon_instagram.svg" alt="соц. сеть" width="32" height="32">
         </a>
       </li>
       <li>
         <a href="#" aria-label="твиттер">
-          twitter
           <img src="img/social-icon_twitter.svg" alt="соц. сеть" width="32" height="32">
         </a>
       </li>
     </ul>
   </section>
-  <section>
+  <section class="footer-user-section">
     <h2 class="visually-hidden">Блок с пользовательскими кнопками, телефоном и ссылкой на академию</h2>
     <ul>
       <li>
@@ -269,7 +272,7 @@
       </li>
     </ul>
     <p>
-      Тел.: <a href="tel:+74954959595" aria-label="контактный номер">+7 (495) 495-95-95</a>
+      <span>Тел.:</span> <a href="tel:+74954959595" aria-label="контактный номер">+7 (495) 495-95-95</a>
     </p>
     <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="ссылка на академию">
       <img src="img/logo-html.png" alt="лого академии" width="27" height="34">
