@@ -430,7 +430,7 @@ a {
 }
 
 .product-type__smart-watch::after {
-  background-image: url("../img/product-type_smart-watch.png");
+  background-image: url("../img/product-type-smart-watch.png");
 }
 
 .product-type__quodrohelicopter::after {
