@@ -23,6 +23,14 @@
   --transition-duration: 0.6s;
 }
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy-extrabold.woff2") format("woff2"),
+  url("../fonts/gilroy-light.woff2") format("woff2"),
+  url("../fonts/gilroy-extrabold.woff") format("woff"),
+  url("../fonts/gilroy-light.woff") format("woff");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -426,7 +434,7 @@ a {
 }
 
 .product-type__quodrohelicopter::after {
-  background-image: url("../img/product-type_quadrohelicopter.png");
+  background-image: url("../img/product-type-quadrohelicopter.png");
 }
 
 .product-type:active::after {
