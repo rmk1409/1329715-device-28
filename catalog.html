@@ -84,7 +84,13 @@
         <a href="index.html">Главная</a>
       </li>
       <li>
+        <img src="img/breadcrumbs-icon-arrow-nav.svg" alt="стрелка в хлебных крошках" width="4" height="7">
+      </li>
+      <li>
         <a href="#">Каталог товаров</a>
+      </li>
+      <li>
+        <img src="img/breadcrumbs-icon-arrow-nav.svg" alt="стрелка в хлебных крошках" width="4" height="7">
       </li>
       <li>
         <a>Моноподы для селфи</a>
@@ -126,7 +132,7 @@
         <legend>Стоимость</legend>
         <!-- TODO здесь будет range with prices-->
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset-color">
         <legend>Цвет</legend>
         <label>
           <input type="checkbox" name="black" checked>
@@ -149,7 +155,7 @@
           Розовый
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset-bluetooth">
         <legend>Bluetooth</legend>
         <label>
           <input type="radio" name="bluetooth-presence" value="presence" checked>
@@ -164,13 +170,13 @@
     </form>
     <div class="catalog-pages-div">
       <section class="catalog-section">
-
-
         <h3 class="visually-hidden">Секция с продуктами</h3>
         <article class="product">
           <img src="img/product-1.jpg" alt="продукт" width="360" height="380">
-          <a href="#">Любительсая селфи-палка</a>
-          <p class="price">500 руб.</p>
+          <div class="product-text">
+            <a href="#">Любительсая селфи-палка</a>
+            <p class="price">500 руб.</p>
+          </div>
           <div class="product-hover-div">
             <button type="button" class="button_interactive">В корзину</button>
             <button type="button" class="button-add-to-compare">Добавить к сравнению</button>
@@ -178,8 +184,13 @@
         </article>
         <article class="product">
           <img src="img/product-2.jpg" alt="продукт" width="360" height="380">
-          <a href="#">Профессиональная селфи-палка</a>
-          <p class="price">1 500 руб.</p>
+          <div class="product-text">
+            <a href="#">
+              Профессиональная<br>
+              селфи-палка
+            </a>
+            <p class="price">1 500 руб.</p>
+          </div>
           <div class="product-hover-div">
             <button type="button" class="button_interactive">В корзину</button>
             <button type="button" class="button-add-to-compare">Добавить к сравнению</button>
@@ -187,8 +198,13 @@
         </article>
         <article class="product">
           <img src="img/product-3.jpg" alt="продукт" width="360" height="380">
-          <a href="#">Непотопляемая селфи-палка</a>
-          <p class="price">2 500 руб.</p>
+          <div class="product-text">
+            <a href="#">
+              Непотопляемая<br>
+              селфи-палка
+            </a>
+            <p class="price">2 500 руб.</p>
+          </div>
           <div class="product-hover-div">
             <button type="button" class="button_interactive">В корзину</button>
             <button type="button" class="button-add-to-compare">Добавить к сравнению</button>
@@ -196,8 +212,10 @@
         </article>
         <article class="product">
           <img src="img/product-4.jpg" alt="продукт" width="360" height="380">
-          <a href="#">Селфи-палка "Следуй за мной"</a>
-          <p class="price">4 900 руб.</p>
+          <div class="product-text">
+            <a href="#">Селфи-палка "Следуй за мной"</a>
+            <p class="price">4 900 руб.</p>
+          </div>
           <div class="product-hover-div">
             <button type="button" class="button_interactive">В корзину</button>
             <button type="button" class="button-add-to-compare">Добавить к сравнению</button>
@@ -206,7 +224,7 @@
       </section>
       <section class="pages-section">
         <h3 class="visually-hidden">Страницы</h3>
-        <ul>
+        <ul class="pages-section__page-list">
           <li>
             <a href="#" class="pages-section__word">Назад</a>
           </li>
