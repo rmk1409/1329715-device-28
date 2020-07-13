@@ -11,6 +11,7 @@
   --grey-form-back: #f2f2f2;
   --grey-form-back-hover: #eaeaea;
   --grey-page-hover: #d9d9d9;
+  --grey-filter-back: #dcdcdc;
 
   --yellow: #f7e296;
   --orange: #f0c52e;
@@ -100,6 +101,7 @@ a {
   font-family: var(--font-open-sans);
   text-transform: none;
   letter-spacing: normal;
+  display: none;
 }
 
 .slider {
@@ -301,6 +303,10 @@ a {
 
 .catalog-link {
   letter-spacing: 0.1em;
+}
+
+.catalog-link:hover ul {
+  display: block;
 }
 
 .footer-user-section a {
@@ -589,6 +595,50 @@ a[href^="tel:"]:active {
 
 .sort-section-icon-list a:active {
   opacity: 1;
+}
+
+.filter-sort-div,
+.form-catalog-div {
+  display: flex;
+}
+
+.filter-sort-div::before,
+.filter-sort-div::after,
+.form-catalog-div::before,
+.form-catalog-div::after {
+  flex-grow: 1;
+  content: "";
+  min-width: 20px;
+}
+
+.filter-sort-div::before {
+  background-color: var(--grey-filter-back);
+}
+
+.filter-sort-div::after {
+  background-color: var(--grey-light);
+}
+
+.form-catalog-div::before {
+  background-color: var(--grey-light);
+}
+
+.main .filter-header,
+.form-filter {
+  width: 328px;
+  margin-left: auto;
+  background-color: var(--grey-filter-back);
+}
+
+.sort-section,
+.catalog-pages-div {
+  width: 832px;
+  margin-right: auto;
+}
+
+.sort-section,
+.form-filter {
+  background-color: var(--grey-light);
 }
 
 /*TODO Don't move it*/
