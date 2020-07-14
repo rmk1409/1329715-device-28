@@ -5,8 +5,8 @@
   <title>Девайс - Главная</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="main-body">
 <div class="container">
@@ -256,10 +256,10 @@
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
           Всякое
           бывает.</p>
-        <a href="#">
+        <a class="button-open-map" href="#">
           <img src="img/map-small.png" alt="карта" width="560" height="222">
         </a>
-        <a href="#" class="button_interactive">Напишите нам</a>
+        <a href="#" class="button_interactive button_write-to-us">Напишите нам</a>
       </section>
     </div>
   </div>
@@ -328,15 +328,15 @@
   <form method="post" action="#" class="feedback-form">
     <label>
       Ваше имя:<br>
-      <input type="text" name="name" placeholder="Имя Фамилия">
+      <input class="name-input" type="text" name="name" placeholder="Имя Фамилия">
     </label>
     <label>
       Ваш e-mail:<br>
-      <input type="email" name="email" placeholder="email@example.com">
+      <input class="email-input" type="email" name="email" placeholder="email@example.com">
     </label>
     <label class="text-area-label">
       Текст письма:<br>
-      <textarea name="message" placeholder="В свободной форме"></textarea>
+      <textarea class="msg-textarea" name="message" placeholder="В свободной форме"></textarea>
     </label>
     <button type="submit" class="button_interactive">Отправить</button>
   </form>
@@ -350,5 +350,6 @@
     tabindex="0"></iframe>
   <button class="button-close-popup" title="кнопка закрыть"></button>
 </section>
+<script src="js/script.min.js"></script>
 </body>
 </html>

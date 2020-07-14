@@ -981,13 +981,39 @@ a {
   outline: none;
 }
 
+.search-form__input::-webkit-input-placeholder {
+  color: var(--black-basic);
+  opacity: 0.3;
+}
+
+.search-form__input::-moz-placeholder {
+  color: var(--black-basic);
+  opacity: 0.3;
+}
+
 .search-form__input::placeholder {
   color: var(--black-basic);
   opacity: 0.3;
 }
 
+.search-form__input:hover::-webkit-input-placeholder {
+  opacity: 0.6;
+}
+
+.search-form__input:hover::-moz-placeholder {
+  opacity: 0.6;
+}
+
 .search-form__input:hover::placeholder {
   opacity: 0.6;
+}
+
+.search-form__input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.search-form__input:focus::-moz-placeholder {
+  opacity: 1;
 }
 
 .search-form__input:focus::placeholder {
@@ -1167,6 +1193,7 @@ a {
 }
 
 .partner-list img {
+  -webkit-filter: grayscale(1);
   filter: grayscale(1);
   opacity: 0.18;
 
@@ -1174,6 +1201,7 @@ a {
 }
 
 .partner-list img:hover {
+  -webkit-filter: none;
   filter: none;
   opacity: 1;
 }
@@ -1661,6 +1689,7 @@ input[type=number] {
 .feedback-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 40px;
   column-gap: 40px;
 }
 
@@ -1731,6 +1760,17 @@ input[type=number] {
 
 .modal-show {
   display: block;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+}
+
+.modal-error {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
 }
 
 .button-close-popup {
@@ -1760,6 +1800,72 @@ input[type=number] {
 
 .button-close-popup:active {
   opacity: 0.3;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translate(-50%, -250%);
+  }
+  70% {
+    transform: translate(-50%, -40%);
+  }
+  90% {
+    transform: translate(-50%, -52%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -250%);
+  }
+  70% {
+    transform: translate(-50%, -40%);
+  }
+  90% {
+    transform: translate(-50%, -52%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate(-48%, -50%);
+  }
+
+  20%, 80% {
+    transform: translate(-52%, -50%);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-49%, -50%);
+  }
+
+  40%, 60% {
+    transform: translate(-51%, -50%);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate(-48%, -50%);
+  }
+
+  20%, 80% {
+    transform: translate(-52%, -50%);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-49%, -50%);
+  }
+
+  40%, 60% {
+    transform: translate(-51%, -50%);
+  }
 }
 
 *, *::before, *::after {
