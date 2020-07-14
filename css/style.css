@@ -178,7 +178,7 @@ a {
 .header-main-nav .submenu {
   position: absolute;
   z-index: 1;
-  top: 40px;
+  top: 22px;
   left: -60px;
 
   display: none;
@@ -187,7 +187,7 @@ a {
   grid-template-rows: repeat(3, 30px);
   width: 1160px;
   min-height: 146px;
-  padding: 12px 60px;
+  padding: 31px 60px;
 
   font-weight: 300;
   font-size: 15px;
@@ -1270,11 +1270,6 @@ a {
   transition-duration: var(--transition-duration);
 }
 
-.popup-map,
-.popup-feedback {
-  display: none;
-}
-
 a[href^="tel:"]:hover,
 a[href^="tel:"]:active {
   opacity: 1;
@@ -1560,6 +1555,8 @@ a[href^="tel:"]:active {
   box-sizing: content-box;
   border-radius: 50%;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
+
+  cursor: pointer;
 }
 
 .price-inputs {
@@ -1661,7 +1658,110 @@ input[type=number] {
   margin-left: 142px;
 }
 
-/*TODO Don"t move it*/
+.feedback-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  font-family: var(--font-open-sans);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  margin-top: 10px;
+}
+
+.feedback-form input {
+  width: 360px;
+  padding: 13px 20px;
+  margin-bottom: 32px;
+}
+
+.feedback-form textarea {
+  width: 760px;
+  padding: 13px 20px;
+  min-height: 167px;
+
+  resize: none;
+}
+
+.feedback-form .text-area-label {
+  grid-column: 1/-1;
+}
+
+.popup-feedback .button_interactive {
+  margin-top: 42px;
+  width: 200px;
+}
+
+.popup-feedback .button_interactive::before {
+  background-color: var(--yellow);
+}
+
+.popup-map,
+.popup-feedback {
+  display: none;
+}
+
+.popup-feedback {
+  width: 960px;
+  min-height: 550px;
+  padding: 92px 100px 69px;
+
+  background-color: var(--white);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+
+  display: none;
+
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+
+  transform: translate(-50%, -50%);
+}
+
+.modal-show {
+  display: block;
+}
+
+.button-close-popup {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 4;
+
+  width: 55px;
+  height: 55px;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../img/button-close.svg");
+  opacity: 0.5;
+}
+
+.popup-map iframe {
+  position: relative;
+  z-index: 3;
+}
+
+.button-close-popup:hover {
+  opacity: 1;
+}
+
+.button-close-popup:active {
+  opacity: 0.3;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
