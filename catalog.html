@@ -10,7 +10,7 @@
 </head>
 <body class="main-body">
 <div class="container">
-  <header class="main-header">
+  <header class="main-header main-header_catalog">
     <section class="header-upper-row">
       <h2 class="visually-hidden">Вверхняя строка с поиском и кнопками</h2>
       <a href="index.html" class="logo">
@@ -23,18 +23,18 @@
         <input id="search-input" type="search" placeholder="Поиск по сайту" class="search-form__input">
         <button type="submit" class="search-form__button">Найти</button>
       </form>
-      <ul class="user-menu">
+      <ul class="header__user-menu header__user-menu_catalog">
         <li>
-          <a href="#" aria-label="ссылка на профиль">Валентин Петухов</a>
+          <a class="link_login" href="#" aria-label="ссылка на профиль">Валентин Петухов</a>
         </li>
         <li>
-          <a href="#" class="link-exit">Выйти</a>
+          <a class="link_exit" href="#">Выйти</a>
         </li>
         <li>
-          <a href="#">Сравнить</a>
+          <a class="link_compare" href="#">Сравнить</a>
         </li>
         <li>
-          <a href="#">Корзина</a>
+          <a class="link_cart" href="#">Корзина</a>
         </li>
       </ul>
     </section>
@@ -44,7 +44,7 @@
           <a href="catalog.html">Каталог товаров</a>
           <ul class="submenu">
             <li>
-              <a href="#">Вируальная реальность</a>
+              <a href="#">Виртуальная реальность</a>
             </li>
             <li>
               <a href="#">Фитнес-браслеты</a>
@@ -53,7 +53,7 @@
               <a href="#">Квадрокоптер</a>
             </li>
             <li>
-              <a href="#">Монопады для селфи</a>
+              <a href="#">Моноподы для селфи</a>
             </li>
             <li>
               <a href="#">Умные часы</a>
@@ -253,7 +253,7 @@
       </a>
       <ul class="footer__user-menu">
         <li>
-          <a href="#" class="link_login">Валентин Петухов</a>
+          <a href="#" class="link_login link_login_catalog">Валентин Петухов</a>
         </li>
         <li class="list-item_link_exit">
           <a href="#" class="link_exit">Выйти</a>
