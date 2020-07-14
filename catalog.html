@@ -129,40 +129,47 @@
   <div class="form-catalog-div">
     <form method="get" action="https://echo.htmlacademy.ru/" class="form-filter">
       <fieldset>
-        <legend>Стоимость</legend>
+        <legend class="fieldset-price">Стоимость</legend>
         <!-- TODO здесь будет range with prices-->
       </fieldset>
       <fieldset class="fieldset-color">
         <legend>Цвет</legend>
-        <label>
-          <input type="checkbox" name="black" checked>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="black" checked>
+          <span class="check__box"></span>
           Чёрный
         </label>
-        <label>
-          <input type="checkbox" name="white">
+        <label class="check">
+          <input class="check__input" type="checkbox" name="white">
+          <span class="check__box"></span>
           Белый
         </label>
-        <label>
-          <input type="checkbox" name="blue" checked>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="blue" checked>
+          <span class="check__box"></span>
           Синий
         </label>
-        <label>
-          <input type="checkbox" name="red" checked>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="red" checked>
+          <span class="check__box"></span>
           Красный
         </label>
-        <label>
-          <input type="checkbox" name="pink">
+        <label class="check">
+          <input class="check__input" type="checkbox" name="pink">
+          <span class="check__box"></span>
           Розовый
         </label>
       </fieldset>
       <fieldset class="fieldset-bluetooth">
         <legend>Bluetooth</legend>
-        <label>
-          <input type="radio" name="bluetooth-presence" value="presence" checked>
+        <label class="check">
+          <input class="check__input" type="radio" name="bluetooth-presence" value="presence" checked>
+          <span class="check__radio"></span>
           Есть
         </label>
-        <label>
-          <input type="radio" name="bluetooth-presence" value="absence">
+        <label class="check">
+          <input class="check__input" type="radio" name="bluetooth-presence" value="absence">
+          <span class="check__radio"></span>
           Нет
         </label>
       </fieldset>

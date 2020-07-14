@@ -1437,12 +1437,103 @@ a[href^="tel:"]:active {
   background-color: var(--grey-light);
 }
 
-.form-filter legend {
-  margin-bottom: 30px;
+.main-body .form-filter {
+  padding-top: 86px;
+  padding-left: 47px;
 }
 
+.form-filter legend {
+  margin-bottom: 29px;
+}
+
+.form-filter fieldset {
+  position: relative;
+
+  border: none;
+}
+
+.fieldset-price {
+  min-height: 100px;
+}
+
+.fieldset-bluetooth {
+  margin-top: 25px;
+}
+
+.form-filter fieldset::before {
+  position: absolute;
+  content: "";
+  top: -16px;
+  left: 11px;
+
+  width: 200px;
+  height: 2px;
+
+  background-color: var(--black-basic);
+}
+
+
 .form-filter .button_interactive {
-  margin-top: 50px;
+  margin-top: 13px;
+  margin-left: 11px;
+  width: 200px;
+}
+
+.check {
+  padding-left: 42px;
+  position: relative;
+  margin-bottom: 25px;
+  letter-spacing: normal;
+}
+
+.fieldset-bluetooth .check {
+  padding-left: 40px;
+}
+
+.check__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.check__box,
+.check__radio {
+  position: absolute;
+  background-image: url("../img/checkbox-off.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  left: 0;
+  top: -4px;
+}
+
+.check__radio {
+  background-image: url("../img/radio-off.svg");
+}
+
+.check__input:checked + .check__box {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.check__input:checked + .check__radio {
+  background-image: url("../img/radio-on.svg");
+}
+
+.check__input:focus + .check__radio,
+.check__input:focus + .check__box {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+.check__input:hover + .check__radio,
+.check__input:hover + .check__box {
+  opacity: 0.6;
+}
+
+.check__input:disabled + .check__radio,
+.check__input:disabled + .check__box {
+  opacity: 0.3;
 }
 
 .fieldset-color,
