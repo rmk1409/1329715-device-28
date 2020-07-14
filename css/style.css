@@ -458,8 +458,57 @@ a {
   justify-content: center;
 }
 
+.main-footer .social-icon-list {
+  margin-left: 432px;
+}
+
 .footer-nav li {
-  margin-right: 36px;
+  margin-right: 33px;
+}
+
+.footer__user-menu a {
+  position: relative;
+
+  display: block;
+  padding-left: 25px;
+}
+
+.footer__user-menu .link_exit {
+  padding-left: 0;
+}
+
+.list-item_link_exit {
+  margin-left: -14px;
+}
+
+.footer__user-menu a::before {
+  position: absolute;
+  content: "";
+  left: 1px;
+  top: 4px;
+
+  width: 13px;
+  height: 14px;
+
+  background-image: url("../img/user-icon-user-yellow.svg");
+}
+
+.footer__user-menu .link_exit::before {
+  display: none;
+}
+
+.footer__user-menu .link_compare::before {
+  width: 14px;
+  height: 14px;
+
+  background-image: url("../img/user-icon-chart-yellow.svg");
+}
+
+.footer__user-menu .link_cart::before {
+  width: 10px;
+  height: 10px;
+
+  background-image: url("../img/user-icon-cart-yellow.svg");
 }
 
 .social-icon-list li {
@@ -475,10 +524,17 @@ a {
   margin-top: 111px;
 }
 
+.main-footer .footer__user-menu {
+  width: 326px;
+}
+
+.main-footer_catalog .footer__user-menu {
+  width: 480px;
+}
+
 .footer__user-menu {
   display: flex;
   justify-content: space-between;
-  width: 480px;
 }
 
 .product-type-section ul {
@@ -761,9 +817,11 @@ a {
 }
 
 .footer__user-menu a {
-  color: inherit;
+  color: rgba(255, 255, 255, 0.7);
+}
 
-  opacity: 0.7;
+.footer__user-menu a::before {
+  opacity: 1;
 }
 
 .main-footer {
@@ -772,6 +830,10 @@ a {
   color: var(--white);
 
   background-color: var(--black-almost);
+}
+
+.main-footer .logo {
+  margin-top: 18px;
 }
 
 .footer__middle-row a {
@@ -806,7 +868,12 @@ a {
 }
 
 .footer__user-menu a:hover {
+  color: rgba(255, 255, 255, 1);
   opacity: 1;
+}
+
+.footer__user-menu a:hover::before {
+  opacity: 0.6;
 }
 
 .main-header a:active,
@@ -1291,27 +1358,29 @@ a[href^="tel:"]:active {
   margin-bottom: 20px;
 }
 
-.footer__upper-row,
-.footer__middle-row,
-.footer__bottom-row {
+.footer__upper-row {
   display: flex;
   justify-content: space-between;
 }
 
 .footer__middle-row {
-  margin-top: 76px;
+  display: flex;
+  margin-top: 36px;
 }
 
 .footer__bottom-row {
   position: relative;
 
+  display: flex;
+
   align-items: center;
-  margin-top: 67px;
+  margin-top: 65px;
 }
 
 .footer__bottom-row::before {
   position: relative;
   content: "";
+  bottom: 3px;
 
   width: 80px;
   height: 7px;
@@ -1319,16 +1388,22 @@ a[href^="tel:"]:active {
   background-color: var(--yellow-bar);
 }
 
+.link-academy {
+  margin-left: auto;
+}
+
 .footer__middle-row .middle-row__address {
   width: 220px;
 }
 
 .footer__middle-row .middle-row__phone-number {
-  width: 170px;
+  width: 164px;
+  margin-left: auto;
 }
 
 .footer__middle-row .footer-nav {
-  width: 423px;
+  width: 440px;
+  margin-left: 142px;
 }
 
 /*TODO Don"t move it*/
