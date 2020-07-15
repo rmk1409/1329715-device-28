@@ -662,6 +662,7 @@ a {
 .main-body .service-list {
   position: relative;
 
+  width: 280px;
   margin-top: 95px;
 }
 
@@ -673,7 +674,7 @@ a {
   position: absolute;
   content: "";
   z-index: 1;
-  right: -4px;
+  left: 278px;
   top: -79px;
 
   height: 320px;
