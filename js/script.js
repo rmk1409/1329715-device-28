@@ -72,7 +72,7 @@ buttonDeliverySliderControl.addEventListener("click", function (evt) {
   buttonDeliverySliderControl.classList.toggle("button_interactive_active");
   document.querySelector(".service-slider__delivery").classList.toggle("service-slider_active");
 });
-let buttonWarantySliderControl = document.querySelector(".button_waranty-control");
+let buttonWarantySliderControl = document.querySelector(".button_warranty-control");
 buttonWarantySliderControl.addEventListener("click", function (evt) {
   evt.preventDefault();
   document.querySelector(".service-list").querySelector(".button_interactive_active").classList.toggle("button_interactive_active");
