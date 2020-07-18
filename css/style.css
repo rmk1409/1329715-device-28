@@ -180,22 +180,19 @@ a {
   z-index: 1;
   top: 22px;
   left: -60px;
-
   display: none;
   gap: 6px 61px;
-  grid-template-columns: 180px 125px 180px;;
+  grid-template-columns: repeat(3, max-content);
   grid-template-rows: repeat(3, 30px);
   width: 1160px;
   min-height: 146px;
   padding: 31px 60px;
-
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
   font-family: var(--font-open-sans);
   text-transform: none;
   letter-spacing: normal;
-
   background-color: var(--yellow);
 }
 
@@ -205,10 +202,9 @@ a {
 
 .slider-section {
   position: relative;
-
   font-family: var(--font-gilroy);
-
   background-image: linear-gradient(var(--yellow) 115px, var(--white) 115px);
+  min-height: 591px;
 }
 
 .slider-section::before {
@@ -225,62 +221,62 @@ a {
 
 .slider-section article {
   position: relative;
-
-  padding: 78px 35px 5px 601px;
+  padding: 0 35px 5px 0;
 }
 
-.slider::before {
-  position: absolute;
-  content: "";
-  left: 89px;
-  top: -14px;
+.slider__slider-1 .promo-image {
+  margin-left: 89px;
+  margin-top: -14px;
+}
 
-  width: 384px;
-  height: 486px;
+.slider__slider-1 .promo-text {
+  margin-left: 127px;
+  margin-top: 78px;
+}
 
-  background-image: url("../img/slider-1.png");
-  background-repeat: no-repeat;
+.slider__slider-2 .promo-image {
+  margin-left: 116px;
+  margin-top: 12px;
+}
+
+.slider__slider-2 .promo-text {
+  margin-left: 140px;
+  margin-top: 78px;
+}
+
+.slider__slider-3 .promo-image {
+  margin-left: 30px;
+  margin-top: 68px;
+}
+
+.slider__slider-3 .promo-text {
+  margin-left: 44px;
+  margin-top: 78px;
 }
 
 .slider::after {
   position: absolute;
-  content: "";
-  top: 12px;
-  right: 60px;
-
+  content: "01";
+  top: -35px;
+  right: 64px;
   width: 164px;
   height: 131px;
-
-  background-image: url("../img/slider-number-01.png");
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+  color: var(--white);
 }
 
 .slider__slider-2::after {
+  content: "02";
   width: 194px;
-
-  background-image: url("../img/slider-number-02.png");
 }
 
 .slider__slider-3::after {
+  content: "03";
   width: 196px;
-
-  background-image: url("../img/slider-number-03.png");
-}
-
-.slider__slider-2::before {
-  top: 12px;
-  left: 116px;
-
-  background-image: url("../img/slider-2.png");
-}
-
-.slider__slider-3::before {
-  top: 68px;
-  left: 30px;
-
-  width: 526px;
-  height: 334px;
-
-  background-image: url("../img/slider-3.png");
 }
 
 .slider .button_interactive {
@@ -325,8 +321,7 @@ a {
 .slider-controls {
   position: absolute;
   right: 88px;
-  bottom: 142px;
-
+  top: 324px;
   display: flex;
 }
 
@@ -439,12 +434,6 @@ a {
   width: 200px;
 }
 
-.slider__slider-2 .button_interactive::before,
-.slider__slider-3 .button_interactive::before,
-.product-hover-div .button_interactive::before {
-  background-color: var(--yellow);
-}
-
 .button_interactive:hover::before {
   height: 100%;
 }
@@ -491,7 +480,7 @@ a {
 .footer-nav,
 .social-icon-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main-footer .social-icon-list {
@@ -587,10 +576,6 @@ a {
 .footer-nav li:last-child,
 .social-icon-list li:last-child {
   margin-right: 0;
-}
-
-.product-type-section {
-  margin-top: 111px;
 }
 
 .main-footer .footer__user-menu {
@@ -977,6 +962,7 @@ a {
 
 .search-form__input {
   padding: 19px 17px 19px 38px;
+  width: 356px;
 
   background-color: var(--yellow);
   border: none;
@@ -1288,6 +1274,10 @@ a {
   transition-duration: var(--transition-duration);
 }
 
+.product-hover-div button {
+  cursor: pointer;
+}
+
 .product:hover .product-hover-div {
   opacity: 1;
 
@@ -1408,6 +1398,7 @@ a[href^="tel:"]:active {
 .sort-section-link-list,
 .sort-section-icon-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-body .sort-section-link-list {
@@ -1417,11 +1408,10 @@ a[href^="tel:"]:active {
 }
 
 .main-body .sort-section-icon-list {
-  margin-left: 220px;
+  margin-left: 218px;
   width: 52px;
   justify-content: space-between;
   margin-top: 2px;
-
   line-height: 0;
 }
 
@@ -1685,7 +1675,7 @@ input[type=number] {
 
 .footer__middle-row .footer-nav {
   width: 440px;
-  margin-left: 142px;
+  margin-left: 148px;
 }
 
 .feedback-form {
@@ -1728,10 +1718,6 @@ input[type=number] {
 .popup-feedback .button_interactive {
   margin-top: 42px;
   width: 200px;
-}
-
-.popup-feedback .button_interactive::before {
-  background-color: var(--yellow);
 }
 
 .popup-map,
@@ -1794,6 +1780,9 @@ input[type=number] {
 .popup-map iframe {
   position: relative;
   z-index: 3;
+  width: 960px;
+  height: 550px;
+  border: 0;
 }
 
 .button-close-popup:hover {
