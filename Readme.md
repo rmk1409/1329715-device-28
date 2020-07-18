@@ -1,5 +1,9 @@
 # Личный проект «Девайс»
 
+You can have a look at [website](https://rmk1409.github.io/1329715-device-28/)
+
+Maket is here [figma](https://www.figma.com/file/rdyjKTk6lREdFYxiAYSBlP/HTML-1-%2F-%D0%94%D0%B5%D0%B2%D0%B0%D0%B9%D1%81?node-id=0%3A1)
+
 * Студент: [R P](https://up.htmlacademy.ru/htmlcss/28/user/1329715).
 * Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
